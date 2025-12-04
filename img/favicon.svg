@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">ArtMind Lab</title>
+  <desc>Logotipo com formas geométricas em azul e coral e as letras A M</desc>
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#23395c"/>
+      <stop offset="100%" stop-color="#ef6f47"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="12" fill="#f8f6f2"/>
+  <rect x="10" y="10" width="44" height="44" rx="10" fill="url(#g)"/>
+  <path d="M20 46 28 22h4l8 24h-4l-2-6h-8l-2 6h-4zm7.5-10h5l-2.5-8.2L27.5 36z" fill="#f8f6f2"/>
+  <circle cx="46" cy="18" r="6" fill="#f8f6f2" opacity="0.85"/>
+</svg>

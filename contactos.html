@@ -1,0 +1,240 @@
+<!doctype html>
+<!-- Ficheiro: contactos.html | Página de contactos e formulário -->
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contactos — ArtMind Lab</title>
+  <meta name="description" content="Contactos fictícios, mapa e formulário de mensagem do ArtMind Lab.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body data-page="contactos">
+  <a class="sr-only" href="#main-content">Saltar para o conteúdo principal</a>
+
+  <!-- Cabeçalho fixo com logo e navegação -->
+  <header class="main-header">
+    <div class="container py-3">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="index.html" class="brand d-flex align-items-center gap-2 text-decoration-none" aria-label="ArtMind Lab - Página inicial">
+          <img src="img/favicon.svg" alt="Logotipo ArtMind Lab" class="brand-icon">
+          <span>Art</span><span>Mind Lab</span>
+        </a>
+
+        <nav class="d-none d-md-flex align-items-center gap-4" aria-label="Navegação principal">
+          <a href="index.html" class="nav-link-custom" data-nav-link data-page="home">Início</a>
+          <a href="projeto.html" class="nav-link-custom" data-nav-link data-page="projeto">Projeto</a>
+          <a href="parceiros.html" class="nav-link-custom" data-nav-link data-page="parceiros">Parceiros &amp; Investidores</a>
+          <a href="contactos.html" class="nav-link-custom" data-nav-link data-page="contactos">Contactos</a>
+        </nav>
+
+        <button class="btn btn-link text-decoration-none text-dark d-md-none fs-3" type="button" aria-expanded="false" aria-controls="mobile-menu" data-nav-toggle>
+          <i class="bi bi-list" aria-hidden="true"></i>
+          <span class="sr-only" data-toggle-text>Abrir menu</span>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="mobile-menu d-md-none px-2 pb-3">
+        <a href="index.html" class="nav-link-custom d-block" data-nav-link data-page="home">Início</a>
+        <a href="projeto.html" class="nav-link-custom d-block" data-nav-link data-page="projeto">Projeto</a>
+        <a href="parceiros.html" class="nav-link-custom d-block" data-nav-link data-page="parceiros">Parceiros &amp; Investidores</a>
+        <a href="contactos.html" class="nav-link-custom d-block" data-nav-link data-page="contactos">Contactos</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero interno com texto introdutório de contacto -->
+    <section class="section page-hero text-primary-foreground">
+      <div class="hero-overlay" style="background-image: url('img/hero-bg.jpg');" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <div class="col-lg-8 animate-fade-in-up">
+          <span class="badge-soft mb-3">Fale Connosco</span>
+          <h1 class="display-5 fw-bold mb-3">Contactos</h1>
+          <p class="lead mb-0 text-primary-foreground" style="opacity:0.9;">Somos estudantes; adoramos ouvir ideias, correções e propostas de colaboração para melhorar o projeto.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Secção com info de contacto + mapa + formulário -->
+    <section class="section">
+      <div class="container">
+        <div class="row g-5">
+          <!-- Coluna esquerda: contactos e mapa -->
+          <div class="col-lg-5">
+            <span class="section-divider mb-3" aria-hidden="true"></span>
+            <h2 class="h1 fw-bold mb-4" id="contact-title">Informação de Contacto</h2>
+
+            <div class="d-grid gap-4 mb-4">
+              <div class="d-flex align-items-start gap-3">
+                <div class="flex-shrink-0 rounded-3 bg-secondary d-inline-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                  <i class="bi bi-envelope text-accent" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <h3 class="h6 fw-semibold mb-1">Email</h3>
+                  <a class="text-muted text-decoration-none" href="mailto:contacto@artmindlab.org">contacto@artmindlab.org</a>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start gap-3">
+                <div class="flex-shrink-0 rounded-3 bg-secondary d-inline-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                  <i class="bi bi-telephone text-accent" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <h3 class="h6 fw-semibold mb-1">Telefone</h3>
+                  <a class="text-muted text-decoration-none" href="tel:+351210000000">+351 210 000 000</a>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start gap-3">
+                <div class="flex-shrink-0 rounded-3 bg-secondary d-inline-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                  <i class="bi bi-geo-alt text-accent" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <h3 class="h6 fw-semibold mb-1">Morada</h3>
+                  <address class="mb-0 text-muted" style="font-style: normal;">
+                    ArtMind Lab — Laboratório de IA &amp; Criatividade<br>
+                    Avenida da Inovação Criativa, 123<br>
+                    1000-000 Lisboa, Portugal
+                  </address>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mapa embebido (fictício) -->
+            <div class="rounded-xl overflow-hidden shadow-soft">
+              <iframe title="Localização do ArtMind Lab em Lisboa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.0001234567!2d-9.1393!3d38.7223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDQzJzIwLjMiTiA5wrAwOCcyMS41Ilc!5e0!3m2!1spt-PT!2spt!4v1234567890" width="600" height="320" style="border:0; width: 100%; max-width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <!-- Coluna direita: formulário com validação no JS -->
+          <div class="col-lg-7">
+            <div class="bg-card rounded-2xl shadow-soft p-4 p-md-5">
+              <h2 class="h4 fw-semibold mb-4">Envie-nos uma mensagem</h2>
+
+              <!-- Mensagem de sucesso (fica escondida até o envio simulado) -->
+              <div id="form-success" class="status-message d-none mb-3" role="alert" tabindex="-1">
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-check-circle" aria-hidden="true"></i>
+                  <span>A sua mensagem foi enviada com sucesso! Entraremos em contacto brevemente.</span>
+                </div>
+              </div>
+
+              <form id="contact-form" novalidate>
+                <!-- Nome -->
+                <div class="mb-3">
+                  <label for="nome" class="form-label">
+                    Nome <span class="text-danger" aria-hidden="true">*</span>
+                    <span class="sr-only">(obrigatório)</span>
+                  </label>
+                  <input type="text" class="form-control-custom" id="nome" name="nome" placeholder="O seu nome completo" aria-required="true" aria-describedby="nome-error">
+                  <p class="form-error d-none" id="nome-error" data-error="nome">
+                    <i class="bi bi-exclamation-triangle" aria-hidden="true"></i>
+                    <span data-error-text></span>
+                  </p>
+                </div>
+
+                <!-- Email -->
+                <div class="mb-3">
+                  <label for="email" class="form-label">
+                    Email <span class="text-danger" aria-hidden="true">*</span>
+                    <span class="sr-only">(obrigatório)</span>
+                  </label>
+                  <input type="email" class="form-control-custom" id="email" name="email" placeholder="exemplo@email.com" aria-required="true" aria-describedby="email-error">
+                  <p class="form-error d-none" id="email-error" data-error="email">
+                    <i class="bi bi-exclamation-triangle" aria-hidden="true"></i>
+                    <span data-error-text></span>
+                  </p>
+                </div>
+
+                <!-- Assunto -->
+                <div class="mb-3">
+                  <label for="assunto" class="form-label">
+                    Assunto <span class="text-danger" aria-hidden="true">*</span>
+                    <span class="sr-only">(obrigatório)</span>
+                  </label>
+                  <input type="text" class="form-control-custom" id="assunto" name="assunto" placeholder="Assunto da mensagem" aria-required="true" aria-describedby="assunto-error">
+                  <p class="form-error d-none" id="assunto-error" data-error="assunto">
+                    <i class="bi bi-exclamation-triangle" aria-hidden="true"></i>
+                    <span data-error-text></span>
+                  </p>
+                </div>
+
+                <!-- Mensagem -->
+                <div class="mb-4">
+                  <label for="mensagem" class="form-label">
+                    Mensagem <span class="text-danger" aria-hidden="true">*</span>
+                    <span class="sr-only">(obrigatório)</span>
+                  </label>
+                  <textarea class="form-control-custom" id="mensagem" name="mensagem" rows="5" placeholder="Escreva a sua mensagem aqui..." aria-required="true" aria-describedby="mensagem-error"></textarea>
+                  <p class="form-error d-none" id="mensagem-error" data-error="mensagem">
+                    <i class="bi bi-exclamation-triangle" aria-hidden="true"></i>
+                    <span data-error-text></span>
+                  </p>
+                </div>
+
+                <!-- Botão de envio; o JS mostra/esconde spinner -->
+                <button type="submit" class="btn-accent w-100" data-submit>
+                  <span class="spinner-border spinner-border-sm me-2 d-none" aria-hidden="true" data-spinner></span>
+                  Enviar mensagem
+                  <i class="bi bi-send ms-2" aria-hidden="true"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer" role="contentinfo">
+    <div class="container py-5">
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <a href="index.html" class="text-decoration-none text-primary-foreground d-inline-block mb-3">
+            <span class="fs-3 fw-bold"> <span class="text-accent">Art</span>Mind Lab</span>
+          </a>
+          <p class="mb-0">Laboratório de investigação aplicada que explora a intersecção entre IA e criatividade artística.</p>
+        </div>
+        <div class="col-md-4">
+          <h3 class="h5 fw-semibold mb-3">Navegação</h3>
+          <nav aria-label="Navegação do rodapé">
+            <ul class="list-unstyled mb-0 d-grid gap-2">
+              <li><a href="index.html" class="text-decoration-none">Início</a></li>
+              <li><a href="projeto.html" class="text-decoration-none">Projeto</a></li>
+              <li><a href="parceiros.html" class="text-decoration-none">Parceiros &amp; Investidores</a></li>
+              <li><a href="contactos.html" class="text-decoration-none">Contactos</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-4">
+          <h3 class="h5 fw-semibold mb-3">Contacto</h3>
+          <address class="mb-0 text-primary-foreground" style="font-style: normal;">
+            <p class="mb-1">Avenida da Inovação Criativa, 123</p>
+            <p class="mb-1">1000-000 Lisboa, Portugal</p>
+            <p class="mb-1"><a href="mailto:contacto@artmindlab.org" class="text-decoration-none">contacto@artmindlab.org</a></p>
+            <p class="mb-0"><a href="tel:+351210000000" class="text-decoration-none">+351 210 000 000</a></p>
+          </address>
+        </div>
+      </div>
+
+      <div class="border-top border-primary-foreground mt-4 pt-3 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <p class="mb-0">© <span id="current-year-contactos" data-current-year></span> ArtMind Lab. Projeto académico de estudantes de Engenharia Informática.</p>
+        <button class="btn btn-link text-decoration-none text-primary-foreground p-0" type="button" data-privacy-trigger>
+          Política de Privacidade
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top" id="scrollTopBtn" aria-label="Voltar ao topo da página">
+    <i class="bi bi-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

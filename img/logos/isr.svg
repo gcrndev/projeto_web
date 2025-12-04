@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Logotipo Instituto de Sistemas e Robótica</title>
+  <desc>Hexágono tecnológico azul com circuito estilizado e letras ISR.</desc>
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#23395c"/>
+      <stop offset="100%" stop-color="#4f6fbf"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="18" fill="#f8f6f2"/>
+  <path d="M80 20 130 50v60l-50 30-50-30V50z" fill="url(#g)"/>
+  <path d="M80 40v80M56 54l48 52M104 54 56 106" stroke="#f8f6f2" stroke-width="4" stroke-linecap="round"/>
+  <text x="80" y="142" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" fill="#23395c">ISR</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Logotipo Fundação para a Inovação Criativa</title>
+  <desc>Formas em gradiente coral e amarelo com as letras FIC.</desc>
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef6f47"/>
+      <stop offset="100%" stop-color="#f5a524"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="18" fill="#23395c"/>
+  <rect x="18" y="18" width="124" height="124" rx="22" fill="url(#g)"/>
+  <text x="80" y="95" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800" fill="#23395c">FIC</text>
+</svg>

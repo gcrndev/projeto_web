@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Logotipo Lisboa Digital</title>
+  <desc>Ponte estilizada em azul com sol coral e letras LD.</desc>
+  <rect width="160" height="160" rx="18" fill="#23395c"/>
+  <circle cx="112" cy="52" r="16" fill="#ef6f47"/>
+  <path d="M30 102h100M36 86h88" stroke="#f8f6f2" stroke-width="6" stroke-linecap="round"/>
+  <path d="M46 102c8-20 18-30 34-30s26 10 34 30" stroke="#f8f6f2" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <text x="80" y="134" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#f8f6f2">LD</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Logotipo TechVentures Capital</title>
+  <desc>Seta ascendente em gradiente azul escuro e coral com letras TV.</desc>
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#23395c"/>
+      <stop offset="100%" stop-color="#ef6f47"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="18" fill="#f8f6f2"/>
+  <path d="M36 112 84 44l40 44-20 12-14-16-18 28z" fill="url(#g)"/>
+  <text x="80" y="138" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#23395c">TV</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Logotipo Creative Cloud Solutions</title>
+  <desc>Nuvem estilizada com gradiente azul para coral e letras CCS.</desc>
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f6fbf"/>
+      <stop offset="100%" stop-color="#ef6f47"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="18" fill="#23395c"/>
+  <path d="M46 96c-10 0-18-8-18-18s8-18 18-18c3 0 6 .7 8.6 2 3.5-12 14.8-21 28.4-21 16 0 29 13 29 29 8.8 0 16 7.2 16 16s-7.2 16-16 16H46z" fill="url(#g)"/>
+  <text x="80" y="132" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#f8f6f2">CCS</text>
+</svg>

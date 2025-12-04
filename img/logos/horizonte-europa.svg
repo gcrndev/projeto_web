@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Logotipo União Europeia - Horizonte Europa</title>
+  <desc>Círculo azul com estrelas e letras UE.</desc>
+  <rect width="160" height="160" rx="18" fill="#1f3a70"/>
+  <circle cx="80" cy="80" r="54" fill="#274c90"/>
+  <g fill="#f5d76e">
+    <polygon points="80,30 84,42 96,42 86,50 90,62 80,54 70,62 74,50 64,42 76,42"/>
+    <polygon points="80,98 84,110 96,110 86,118 90,130 80,122 70,130 74,118 64,110 76,110" transform="rotate(36 80 80)"/>
+    <polygon points="80,98 84,110 96,110 86,118 90,130 80,122 70,130 74,118 64,110 76,110" transform="rotate(72 80 80)"/>
+    <polygon points="80,98 84,110 96,110 86,118 90,130 80,122 70,130 74,118 64,110 76,110" transform="rotate(108 80 80)"/>
+    <polygon points="80,98 84,110 96,110 86,118 90,130 80,122 70,130 74,118 64,110 76,110" transform="rotate(144 80 80)"/>
+  </g>
+  <text x="80" y="148" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#f8f6f2">UE</text>
+</svg>

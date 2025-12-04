@@ -1,0 +1,515 @@
+/* =============================================================================
+   Ficheiro: css/style.css
+   Objetivo: definir cores, fontes, espaços e efeitos visuais do site.
+   Notas: comentários curtos em blocos para orientar iniciantes.
+   ============================================================================= */
+
+/* Importa duas fontes do Google: Inter (sem serifa) e Playfair (serifada) */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap");
+
+/* --------------------------- Variáveis de tema --------------------------- */
+:root {
+  --background: hsl(40 20% 98%);
+  --foreground: hsl(230 25% 12%);
+  --card: #ffffff;
+  --card-foreground: hsl(230 25% 12%);
+  --primary: hsl(235 45% 25%);
+  --primary-foreground: hsl(40 20% 98%);
+  --secondary: hsl(40 30% 94%);
+  --secondary-foreground: hsl(230 25% 12%);
+  --muted: hsl(230 15% 92%);
+  --muted-foreground: hsl(230 10% 45%);
+  --accent: hsl(15 85% 55%);
+  --accent-foreground: #ffffff;
+  --destructive: hsl(0 84% 60%);
+  --border: hsl(230 20% 88%);
+  --shadow-soft: 0 4px 20px -4px rgba(30, 34, 56, 0.12);
+  --shadow-medium: 0 8px 30px -8px rgba(30, 34, 56, 0.16);
+  --shadow-accent: 0 8px 30px -8px rgba(239, 111, 71, 0.32);
+  --radius: 12px;
+  --hero-gradient: linear-gradient(135deg, hsl(235 45% 20%) 0%, hsl(260 40% 30%) 50%, hsl(15 60% 35%) 100%);
+  --card-gradient: linear-gradient(180deg, #ffffff 0%, hsl(40 20% 97%) 100%);
+  --text-gradient: linear-gradient(135deg, hsl(235 45% 25%) 0%, hsl(15 85% 55%) 100%);
+}
+
+/* Reset básico: bordas contam na largura/altura */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Corpo do site: cores e fonte padrão */
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+/* Títulos com fonte serifada para elegância */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 600;
+  margin: 0 0 0.6rem;
+  line-height: 1.25;
+}
+
+/* Parágrafos com espaçamento inferior */
+p {
+  margin: 0 0 1rem;
+}
+
+/* Links sem sublinhado e herdando cor */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Destaque de foco para navegação por teclado */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Imagens não estouram do container */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Faz a imagem preencher mantendo corte */
+.object-fit-cover {
+  object-fit: cover;
+}
+
+/* Espaço no topo para compensar cabeçalho fixo */
+main {
+  padding-top: 88px;
+}
+@media (min-width: 768px) {
+  main {
+    padding-top: 104px;
+  }
+}
+
+/* Espaçamento vertical de seções */
+.section {
+  padding: 5rem 0;
+}
+@media (min-width: 768px) {
+  .section {
+    padding: 6.5rem 0;
+  }
+}
+
+/* Fundos utilitários */
+.bg-secondary {
+  background: var(--secondary);
+}
+.bg-primary {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+.bg-primary-soft {
+  background: rgba(35, 39, 92, 0.08);
+  color: var(--foreground);
+}
+.bg-card {
+  background: var(--card);
+}
+
+/* Texto utilitário */
+.text-muted {
+  color: var(--muted-foreground);
+}
+.text-primary-foreground {
+  color: var(--primary-foreground);
+}
+.text-accent {
+  color: var(--accent);
+}
+
+/* Raios e sombras */
+.rounded-xl {
+  border-radius: var(--radius);
+}
+.rounded-2xl {
+  border-radius: calc(var(--radius) + 6px);
+}
+.shadow-soft {
+  box-shadow: var(--shadow-soft);
+}
+.shadow-medium {
+  box-shadow: var(--shadow-medium);
+}
+
+/* Barrinha colorida antes de títulos */
+.section-divider {
+  width: 64px;
+  height: 4px;
+  background: var(--accent);
+  border-radius: 999px;
+  display: inline-block;
+}
+
+/* Texto com gradiente (usado no 404) */
+.text-gradient {
+  background: var(--text-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Efeito hover de cartão */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-medium);
+}
+
+/* Hero principal */
+.hero-section {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  background: var(--hero-gradient);
+  overflow: hidden;
+  color: var(--primary-foreground);
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0.28;
+  background-size: cover;
+  background-position: center;
+}
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.25;
+  background-image: radial-gradient(circle at 20% 50%, rgba(239, 111, 71, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(86, 82, 146, 0.25) 0%, transparent 40%);
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Hero das páginas internas */
+.page-hero {
+  position: relative;
+  overflow: hidden;
+  background: var(--hero-gradient);
+  color: var(--primary-foreground);
+}
+.page-hero .hero-overlay {
+  opacity: 0.22;
+}
+.page-hero .hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Selo arredondado */
+.badge-soft {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  background: rgba(239, 111, 71, 0.16);
+  color: var(--accent);
+}
+
+/* Botões principais */
+.btn-accent,
+.btn-outline,
+.btn-primary-custom {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.4rem;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  font-size: 1rem;
+}
+.btn-accent {
+  background: var(--accent);
+  color: var(--accent-foreground);
+  box-shadow: var(--shadow-accent);
+  border: none;
+}
+.btn-accent:hover,
+.btn-accent:focus {
+  opacity: 0.9;
+}
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--primary-foreground);
+  color: var(--primary-foreground);
+}
+.btn-outline:hover,
+.btn-outline:focus {
+  background: var(--primary-foreground);
+  color: var(--primary);
+}
+.btn-primary-custom {
+  background: var(--primary);
+  color: var(--primary-foreground);
+  border: none;
+}
+.btn-primary-custom:hover,
+.btn-primary-custom:focus {
+  opacity: 0.9;
+}
+
+/* Cabeçalho fixo */
+.main-header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 1040;
+  background: rgba(248, 246, 242, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+.brand {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--foreground);
+}
+.brand-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  box-shadow: var(--shadow-soft);
+}
+.brand span:first-child {
+  color: var(--accent);
+}
+.nav-link-custom {
+  position: relative;
+  padding: 0.5rem 0;
+  color: rgba(22, 26, 44, 0.8);
+  font-weight: 600;
+}
+.nav-link-custom:hover {
+  color: var(--foreground);
+}
+.nav-link-custom.active {
+  color: var(--foreground);
+}
+.nav-link-custom.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: var(--accent);
+  border-radius: 999px;
+}
+
+/* Menu mobile */
+.mobile-menu {
+  display: none;
+  background: var(--background);
+  border-bottom: 1px solid var(--border);
+}
+.mobile-menu a {
+  display: block;
+  padding: 0.9rem 0.75rem;
+  border-radius: 12px;
+  font-weight: 600;
+}
+.mobile-menu a:hover {
+  background: var(--muted);
+}
+.mobile-menu a.active {
+  color: var(--accent);
+  background: rgba(239, 111, 71, 0.12);
+}
+.mobile-menu.is-open {
+  display: block;
+}
+
+/* Cartões com gradiente */
+.card-gradient {
+  background: var(--card-gradient);
+}
+
+/* Linha temporal (timeline) */
+.timeline {
+  border-left: 2px solid var(--border);
+  padding-left: 1.5rem;
+}
+.timeline-item {
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -21px;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 4px solid var(--background);
+}
+
+/* Formulários */
+.form-label {
+  font-weight: 600;
+  color: var(--foreground);
+  margin-bottom: 0.35rem;
+}
+.form-control-custom {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--background);
+  color: var(--foreground);
+  transition: all 0.2s ease;
+}
+.form-control-custom:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(239, 111, 71, 0.35);
+}
+.form-control-custom.is-invalid {
+  border-color: var(--destructive);
+}
+.form-error {
+  color: var(--destructive);
+  font-size: 0.9rem;
+  margin-top: 0.35rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.status-message {
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  border: 1px solid #c6f6d5;
+  background: #f0fff4;
+  color: #276749;
+}
+
+/* Texto grande com gradiente (404) */
+.text-gradient-large {
+  font-size: clamp(3rem, 8vw, 5.5rem);
+}
+
+/* Conteúdo apenas para leitores de ecrã */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Botão voltar ao topo */
+.back-to-top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1050;
+  padding: 0.8rem 0.9rem;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--accent-foreground);
+  border: none;
+  box-shadow: var(--shadow-accent);
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+  transition: all 0.25s ease;
+}
+.back-to-top.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Rodapé */
+.footer {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+.footer a {
+  color: rgba(248, 244, 239, 0.8);
+}
+.footer a:hover {
+  color: var(--accent);
+}
+.border-primary-foreground {
+  border-color: rgba(248, 244, 239, 0.3) !important;
+}
+
+/* Animações de fade */
+.animate-fade-in {
+  opacity: 0;
+  animation: fadeIn 0.6s ease-out forwards;
+}
+.animate-fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+.animate-delay-1 {
+  animation-delay: 0.1s;
+}
+.animate-delay-2 {
+  animation-delay: 0.2s;
+}
+.animate-delay-3 {
+  animation-delay: 0.3s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,314 @@
+<!doctype html>
+<!-- Ficheiro: projeto.html | Página do projeto (conteúdo principal) -->
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projeto — ArtMind Lab</title>
+  <!-- Descrição curta para motores de busca -->
+  <meta name="description" content="Projeto de investigação aplicada que explora o potencial da inteligência artificial na criação artística.">
+  <!-- Ícone da aba -->
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <!-- CSS base (grid/utilitários) -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Ícones Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Estilos principais do site -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body data-page="projeto">
+  <!-- Link escondido para saltar para o conteúdo principal (acessibilidade) -->
+  <a class="sr-only" href="#main-content">Saltar para o conteúdo principal</a>
+
+  <!-- Cabeçalho fixo com logo e navegação -->
+  <header class="main-header">
+    <div class="container py-3">
+      <div class="d-flex align-items-center justify-content-between">
+        <!-- Logotipo e nome; clicar volta ao início -->
+        <a href="index.html" class="brand d-flex align-items-center gap-2 text-decoration-none" aria-label="ArtMind Lab - Página inicial">
+          <img src="img/favicon.svg" alt="Logotipo ArtMind Lab" class="brand-icon">
+          <span>Art</span><span>Mind Lab</span>
+        </a>
+
+        <!-- Menu principal (desktop/tablet) -->
+        <nav class="d-none d-md-flex align-items-center gap-4" aria-label="Navegação principal">
+          <a href="index.html" class="nav-link-custom" data-nav-link data-page="home">Início</a>
+          <a href="projeto.html" class="nav-link-custom" data-nav-link data-page="projeto">Projeto</a>
+          <a href="parceiros.html" class="nav-link-custom" data-nav-link data-page="parceiros">Parceiros &amp; Investidores</a>
+          <a href="contactos.html" class="nav-link-custom" data-nav-link data-page="contactos">Contactos</a>
+        </nav>
+
+        <!-- Botão hambúrguer para menu mobile -->
+        <button class="btn btn-link text-decoration-none text-dark d-md-none fs-3" type="button" aria-expanded="false" aria-controls="mobile-menu" data-nav-toggle>
+          <i class="bi bi-list" aria-hidden="true"></i>
+          <span class="sr-only" data-toggle-text>Abrir menu</span>
+        </button>
+      </div>
+
+      <!-- Menu mobile (mostrado/ocultado pelo JS) -->
+      <div id="mobile-menu" class="mobile-menu d-md-none px-2 pb-3">
+        <a href="index.html" class="nav-link-custom d-block" data-nav-link data-page="home">Início</a>
+        <a href="projeto.html" class="nav-link-custom d-block" data-nav-link data-page="projeto">Projeto</a>
+        <a href="parceiros.html" class="nav-link-custom d-block" data-nav-link data-page="parceiros">Parceiros &amp; Investidores</a>
+        <a href="contactos.html" class="nav-link-custom d-block" data-nav-link data-page="contactos">Contactos</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main id="main-content">
+    <!-- Hero interno: fundo com imagem + resumo do projeto -->
+    <section class="section page-hero text-primary-foreground">
+      <div class="hero-overlay" style="background-image: url('img/hero-bg.jpg');" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <div class="col-lg-8 animate-fade-in-up">
+          <span class="badge-soft mb-3">Projeto académico</span>
+          <h1 class="display-5 fw-bold mb-3">ArtMind Lab: Onde a IA Encontra a Arte</h1>
+          <p class="lead mb-0 text-primary-foreground" style="opacity:0.9;">Trabalho de estudantes de engenharia informática explorando como a IA pode colaborar com artistas e criadores, com espírito experimental e aprendizagem.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enquadramento: texto descritivo e lista de áreas -->
+    <section class="section">
+      <div class="container">
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-7">
+            <span class="section-divider mb-3" aria-hidden="true"></span>
+            <h2 class="h2 fw-bold mb-4">Enquadramento</h2>
+            <div class="text-muted d-grid gap-3">
+              <p>
+                Modelos de inteligência artificial generativa (GANs, transformers, difusão) estão a redefinir os limites da criatividade. Estas tecnologias, antes restritas a laboratórios, agora estão ao alcance de artistas e criadores.
+              </p>
+              <p>
+                O <strong>ArtMind Lab</strong> liga academia, comunidade artística e indústria tecnológica, criando um espaço onde investigadores, artistas e engenheiros colaboram para novas formas de expressão.
+              </p>
+              <p>Três áreas principais de investigação:</p>
+              <ul class="mb-0">
+                <li class="mb-2"><strong>IA Generativa em múltiplas disciplinas:</strong> música, artes visuais, vídeo, artes performativas.</li>
+                <li class="mb-2"><strong>Co-criação humano-máquina:</strong> ferramentas que permitem colaboração real entre artista e sistema de IA.</li>
+                <li class="mb-0"><strong>Ética e sociedade:</strong> autoria, direitos de autor, viés algorítmico e impacto socioeconómico.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Caixa lateral com objetivos específicos -->
+          <div class="col-lg-5">
+            <div class="bg-card rounded-2xl shadow-soft p-4 p-md-5 card-gradient">
+              <h3 class="h4 fw-semibold mb-4 d-flex align-items-center gap-2">
+                <i class="bi bi-lightbulb text-accent" aria-hidden="true"></i>
+                Objetivos Específicos
+              </h3>
+              <div class="d-grid gap-3">
+                <div class="d-flex gap-3">
+                  <div class="flex-shrink-0 d-inline-flex align-items-center justify-content-center bg-secondary rounded-3" style="width: 44px; height: 44px;">
+                    <i class="bi bi-lightbulb text-accent" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <h4 class="h6 fw-semibold mb-1">Desenvolver ferramentas de co-criação</h4>
+                    <p class="text-muted small mb-0">Software que permite artistas colaborarem com IA.</p>
+                  </div>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <div class="flex-shrink-0 d-inline-flex align-items-center justify-content-center bg-secondary rounded-3" style="width: 44px; height: 44px;">
+                    <i class="bi bi-people text-accent" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <h4 class="h6 fw-semibold mb-1">Investigar perceção do público</h4>
+                    <p class="text-muted small mb-0">Medir como o público valoriza obras com IA.</p>
+                  </div>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <div class="flex-shrink-0 d-inline-flex align-items-center justify-content-center bg-secondary rounded-3" style="width: 44px; height: 44px;">
+                    <i class="bi bi-flask text-accent" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <h4 class="h6 fw-semibold mb-1">Criar repositório experimental</h4>
+                    <p class="text-muted small mb-0">Coleção aberta de obras co-criadas com IA.</p>
+                  </div>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <div class="flex-shrink-0 d-inline-flex align-items-center justify-content-center bg-secondary rounded-3" style="width: 44px; height: 44px;">
+                    <i class="bi bi-award text-accent" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <h4 class="h6 fw-semibold mb-1">Definir práticas éticas</h4>
+                    <p class="text-muted small mb-0">Diretrizes para uso responsável de IA nas artes.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Metodologia: três passos simples -->
+    <section class="section bg-secondary">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-divider mb-3" aria-hidden="true"></span>
+          <h2 class="h1 fw-bold mb-2">Metodologia</h2>
+          <p class="text-muted mb-0">Mistura de rigor científico com experimentação artística.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <article class="card-hover bg-card rounded-xl shadow-soft p-4 h-100">
+              <div class="d-inline-flex align-items-center justify-content-center rounded-3 mb-3" style="width: 52px; height: 52px; background: rgba(52, 83, 151, 0.1);">
+                <span class="h4 fw-bold text-primary mb-0">1</span>
+              </div>
+              <h3 class="h5 fw-semibold mb-2">Workshops Colaborativos</h3>
+              <p class="text-muted small mb-0">Artistas convidados usam as ferramentas e dão feedback.</p>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="card-hover bg-card rounded-xl shadow-soft p-4 h-100">
+              <div class="d-inline-flex align-items-center justify-content-center rounded-3 mb-3" style="width: 52px; height: 52px; background: rgba(52, 83, 151, 0.1);">
+                <span class="h4 fw-bold text-primary mb-0">2</span>
+              </div>
+              <h3 class="h5 fw-semibold mb-2">Testes com Público</h3>
+              <p class="text-muted small mb-0">Experiências controladas para medir perceção do público.</p>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="card-hover bg-card rounded-xl shadow-soft p-4 h-100">
+              <div class="d-inline-flex align-items-center justify-content-center rounded-3 mb-3" style="width: 52px; height: 52px; background: rgba(52, 83, 151, 0.1);">
+                <span class="h4 fw-bold text-primary mb-0">3</span>
+              </div>
+              <h3 class="h5 fw-semibold mb-2">Prototipagem Iterativa</h3>
+              <p class="text-muted small mb-0">Ciclos rápidos de criar, testar e melhorar ferramentas.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resultados esperados + linha temporal -->
+    <section class="section">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6">
+            <span class="section-divider mb-3" aria-hidden="true"></span>
+            <h2 class="h1 fw-bold mb-4">Resultados Esperados</h2>
+            <div class="text-muted d-grid gap-3">
+              <p>Lista de entregáveis que mostram valor da colaboração humano-IA:</p>
+              <ul class="mb-0 d-grid gap-2">
+                <li class="d-flex gap-2 align-items-start">
+                  <span class="d-inline-block mt-2 rounded-pill" style="width: 8px; height: 8px; background: var(--accent);" aria-hidden="true"></span>
+                  <span><strong>Instalações Interativas:</strong> Obras que reagem ao público em tempo real.</span>
+                </li>
+                <li class="d-flex gap-2 align-items-start">
+                  <span class="d-inline-block mt-2 rounded-pill" style="width: 8px; height: 8px; background: var(--accent);" aria-hidden="true"></span>
+                  <span><strong>Performances Audiovisuais:</strong> Música generativa, projeções visuais e movimento.</span>
+                </li>
+                <li class="d-flex gap-2 align-items-start">
+                  <span class="d-inline-block mt-2 rounded-pill" style="width: 8px; height: 8px; background: var(--accent);" aria-hidden="true"></span>
+                  <span><strong>Exposições Digitais:</strong> Galerias virtuais com obras geradas em tempo real.</span>
+                </li>
+                <li class="d-flex gap-2 align-items-start">
+                  <span class="d-inline-block mt-2 rounded-pill" style="width: 8px; height: 8px; background: var(--accent);" aria-hidden="true"></span>
+                  <span><strong>Publicações Científicas:</strong> Artigos em revistas e conferências.</span>
+                </li>
+                <li class="d-flex gap-2 align-items-start">
+                  <span class="d-inline-block mt-2 rounded-pill" style="width: 8px; height: 8px; background: var(--accent);" aria-hidden="true"></span>
+                  <span><strong>Ferramentas Open-Source:</strong> Software gratuito para a comunidade.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Linha temporal com fases do projeto -->
+          <div class="col-lg-6">
+            <div class="bg-primary-soft rounded-2xl p-4 p-md-5 shadow-soft">
+              <div class="d-flex align-items-center gap-2 mb-4">
+                <i class="bi bi-calendar3 text-accent fs-5" aria-hidden="true"></i>
+                <h3 class="h4 fw-semibold mb-0">Linha Temporal</h3>
+              </div>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="text-uppercase text-accent fw-semibold small">Fase 1</span>
+                  <h4 class="h6 fw-semibold mb-1">Pesquisa Inicial</h4>
+                  <p class="text-muted small mb-1">Janeiro - Junho 2024</p>
+                  <p class="text-muted small mb-0">Revisão de literatura e definição de requisitos.</p>
+                </div>
+                <div class="timeline-item">
+                  <span class="text-uppercase text-accent fw-semibold small">Fase 2</span>
+                  <h4 class="h6 fw-semibold mb-1">Desenvolvimento de Protótipos</h4>
+                  <p class="text-muted small mb-1">Julho - Dezembro 2024</p>
+                  <p class="text-muted small mb-0">Primeiras versões das ferramentas e testes internos.</p>
+                </div>
+                <div class="timeline-item">
+                  <span class="text-uppercase text-accent fw-semibold small">Fase 3</span>
+                  <h4 class="h6 fw-semibold mb-1">Testes com Artistas</h4>
+                  <p class="text-muted small mb-1">Janeiro - Junho 2025</p>
+                  <p class="text-muted small mb-0">Workshops colaborativos para validar e refinar.</p>
+                </div>
+                <div class="timeline-item">
+                  <span class="text-uppercase text-accent fw-semibold small">Fase 4</span>
+                  <h4 class="h6 fw-semibold mb-1">Exposição Final</h4>
+                  <p class="text-muted small mb-1">Outubro 2025</p>
+                  <p class="text-muted small mb-0">Apresentação pública interativa em Lisboa.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé padrão com navegação e contactos fictícios -->
+  <footer class="footer" role="contentinfo">
+    <div class="container py-5">
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <a href="index.html" class="text-decoration-none text-primary-foreground d-inline-block mb-3">
+            <span class="fs-3 fw-bold"> <span class="text-accent">Art</span>Mind Lab</span>
+          </a>
+          <p class="mb-0">Laboratório de investigação aplicada na interseção de IA e criatividade artística.</p>
+        </div>
+        <div class="col-md-4">
+          <h3 class="h5 fw-semibold mb-3">Navegação</h3>
+          <nav aria-label="Navegação do rodapé">
+            <ul class="list-unstyled mb-0 d-grid gap-2">
+              <li><a href="index.html" class="text-decoration-none">Início</a></li>
+              <li><a href="projeto.html" class="text-decoration-none">Projeto</a></li>
+              <li><a href="parceiros.html" class="text-decoration-none">Parceiros &amp; Investidores</a></li>
+              <li><a href="contactos.html" class="text-decoration-none">Contactos</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-4">
+          <h3 class="h5 fw-semibold mb-3">Contacto</h3>
+          <address class="mb-0 text-primary-foreground" style="font-style: normal;">
+            <p class="mb-1">Avenida da Inovação Criativa, 123</p>
+            <p class="mb-1">1000-000 Lisboa, Portugal</p>
+            <p class="mb-1"><a href="mailto:contacto@artmindlab.org" class="text-decoration-none">contacto@artmindlab.org</a></p>
+            <p class="mb-0"><a href="tel:+351210000000" class="text-decoration-none">+351 210 000 000</a></p>
+          </address>
+        </div>
+      </div>
+
+      <div class="border-top border-primary-foreground mt-4 pt-3 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+            <p class="mb-0">© <span id="current-year-projeto" data-current-year></span> ArtMind Lab. Projeto académico por estudantes de Engenharia Informática.</p>
+        <button class="btn btn-link text-decoration-none text-primary-foreground p-0" type="button" data-privacy-trigger>
+          Política de Privacidade
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante para voltar ao topo -->
+  <button type="button" class="back-to-top" id="scrollTopBtn" aria-label="Voltar ao topo da página">
+    <i class="bi bi-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- Scripts: stub do Bootstrap e o JS principal -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

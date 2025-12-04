@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Logotipo Ministério da Cultura</title>
+  <desc>Escudo minimalista em azul com faixa coral e letras MC.</desc>
+  <rect width="160" height="160" rx="18" fill="#f8f6f2"/>
+  <path d="M36 32h88v52c0 26.5-19.7 48.5-44 48.5S36 110.5 36 84V32z" fill="#23395c"/>
+  <rect x="44" y="52" width="72" height="18" fill="#ef6f47"/>
+  <text x="80" y="120" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#f8f6f2">MC</text>
+</svg>

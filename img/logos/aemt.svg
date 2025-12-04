@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Logotipo Academia Europeia de Música e Tecnologia</title>
+  <desc>Gradiente violeta e coral com pentagrama estilizado e as letras AEMT.</desc>
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3f4c97"/>
+      <stop offset="100%" stop-color="#ef6f47"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="18" fill="#f8f6f2"/>
+  <circle cx="80" cy="80" r="65" fill="url(#g)" opacity="0.9"/>
+  <path d="M38 70h84M38 84h84M38 98h84" stroke="#f8f6f2" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="64" cy="70" r="6" fill="#f8f6f2"/>
+  <circle cx="94" cy="84" r="6" fill="#f8f6f2"/>
+  <circle cx="74" cy="98" r="6" fill="#f8f6f2"/>
+  <text x="80" y="128" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#f8f6f2">AEMT</text>
+</svg>
